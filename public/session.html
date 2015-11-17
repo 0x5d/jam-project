@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <title>jamming</title>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type='text/css' href="../styles/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div id="root" class="container">
+      <div class="text-center">
+        <iframe src="http://nodeknockout.com/iframe/newdevs" frameborder=0 scrolling=no allowtransparency=true width=115 height=25>
+        </iframe>
+        <br>
+        <h3>Send this page's link to your friends so they can join in!</h3>
+      </div>
+      <h3>BPM</h3> <input id="bpm" type="number" name="bpm" value="120" min="1" step="1">
+      <div class="text-center">
+        <button id="btn-rec" type="button" name="rec" onclick="toggleRecording(this)">
+          R E C
+        </button>
+      </div>
+
+      <!--<div class="text-center">
+        <button id="btn-upload" type="button" name="upload" onclick="uploadSound(this)">
+          Upload
+        </button>
+      </div>-->
+      <!-- <a id="save" href="#">Save</a> -->
+      <table id="controls" class="table">
+        <thead>
+          <tr id="playhead">
+            <th id = "title" class="text-center">Tracks</th>
+            <th id="beat-buttons" class="text-center">
+              <button id="btn-add" type="button" name="button" class="btn">
+                <i class="glyphicon glyphicon-plus"></i>
+              </button>
+              <button id="btn-remove" type="button" name="button" class="btn" disabled="true">
+                <i class="glyphicon glyphicon-minus"></i>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="samples">
+        </tbody>
+      </table>
+      <div id = "sketch"></div>
+    </div>
+    <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/app/session/recorder/recorder.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script type="text/javascript" src="js/lib/uuid.js"></script>
+    <script type="text/javascript" src="js/app/session/playhead.js"></script>
+    <script type="text/javascript" src="js/app/session/recorder-manager.js"></script>
+    <script type="text/javascript" src="js/lib/p5.min.js"></script>
+    <script type="text/javascript" src="js/app/session/visualizer.js"></script>
+    <script type="text/javascript" src="js/app/session/player.js"></script>
+    <script type="text/javascript" src="js/app/session/sketch.js"></script>
+    <script type="text/javascript" src="styles/style.js"></script>
+    <script>
+      SC.initialize({
+        client_id: 'b148c0cfe7c8be9d4c073ed60d5d78d5',
+        redirect_uri: 'http://localhost:8080/callback.html'
+      });
+    </script>
+  </body>
+</html>

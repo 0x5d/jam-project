@@ -1,0 +1,102 @@
+html, body {
+  height: 100%;
+}
+
+.cyan {
+  background-color: #44dfed !important;
+}
+
+.magenta {
+  background-color: #B276FF;
+}
+
+#btn-rec {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+}
+
+#btn-rec.recording {
+  background-color: black;
+  border-radius: 10px;
+}
+
+#sketch, #sketch * {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#controls {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border-style: none !important;
+}
+
+#beat-buttons *{
+  margin: 0;
+  display: block;
+}
+
+#playhead {
+  margin: 0px;
+  padding: 0px;
+}
+
+.div-beat {
+  font-size: x-largeT;
+}
+
+.div-beat.current {
+  background-color: WhiteSmoke;
+}
+
+.beats-list {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.beats-list li {
+  display: inline-block;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+}
+
+.beat-toggle {
+  height: 40px;
+  width: 40px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#beat-buttons {
+  padding: 0;
+  width: 3%;
+}
+
+#beat-buttons .btn {
+  margin: auto;
+}
+
+#title {
+  width: 20%;
+}
+
+#bpm {
+  background-color: inherit;
+  width: 60px;
+  border: none;
+}
