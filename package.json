@@ -11,13 +11,6 @@
     "socket.io": "1.3.7"
   },
   "scripts": {
-    "start": "node app.js",
-    "postinstall": "node scripts/postinstall.js"
-  },
-  "standard": {
-    "globals": [
-      "p5",
-      "$"
-    ]
+    "start": "node app.js"
   }
 }

@@ -13,8 +13,8 @@ socketServer.init(server)
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-// get Routes
-app.use('/api/v1/session', require('./server/api/session'))
+// route
+app.use('/api/v1', require('./server/api'))
 
 // Create a static file server
 app.use(express.static(__dirname + '/public'))
