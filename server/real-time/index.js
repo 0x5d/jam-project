@@ -1,18 +1,15 @@
 'use strict'
 
 const config = require('../config')
-const client = require('redis').createClient(config.redis.uri)
 
-module.exports.init = function (http) {
+function init (http) {
   const io = require('socket.io')(http)
 
   io.on('connection', function (socket) {
     socket.on('enter', function (id) {
       socket.join(id)
+      // Join 'self' room
       socket.join(socket.id)
-      client.hgetall(id, function (err, reply) {
-        io.to(socket.id).emit('settings', reply)
-      })
     })
 
     socket.on('sound', function (data) {
@@ -23,4 +20,8 @@ module.exports.init = function (http) {
       socket.broadcast.to(settings.id).emit('settings', settings)
     })
   })
+}
+
+module.exports = {
+  'init': init
 }
