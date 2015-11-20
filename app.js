@@ -20,5 +20,5 @@ app.use('/api/v1', require('./server/api'))
 app.use(express.static(__dirname + '/public'))
 
 server.listen(config.server.port, function onListening () {
-  console.log('Example app listening on port %s', config.server.port)
-});
+  console.log('Jam is listening on port %s', config.server.port)
+})

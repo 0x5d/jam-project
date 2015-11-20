@@ -1,0 +1,35 @@
+{
+  "name": "Jam",
+  "description": "Record sounds and mix them collaboratively, over the interwebz!",
+  "main": "./app.js",
+  "authors": [
+    "halzate93",
+    "castillobg",
+    "jessecogollo"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jam",
+    "sequencer",
+    "socket",
+    "real",
+    "time"
+  ],
+  "homepage": "https://github.com/castillobg/jam-project",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "node-uuid": "~1.4.7",
+    "p5.js": "p5js#~0.4.19",
+    "bootstrap": "~3.3.5",
+    "socket.io-client": "~1.3.7",
+    "Recorderjs": "https://github.com/mattdiamond/Recorderjs"
+  }
+}

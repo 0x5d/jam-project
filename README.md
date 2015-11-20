@@ -8,12 +8,14 @@ If you like it, make sure you hit the ![Vote KO widget](http://f.cl.ly/items/1n3
 ### To deploy the server:
 
 ~~~sh
+$ bower install
+
 $ npm install
 
 $ npm start
 ~~~
 
-Head over to localhost:8080, and make some cool music with sounds!
+Head over to localhost:8080, and make some cool sounds!
 
 
 ### Built for fun by [@halzate93](https://github.com/halzate93), [@castillobg](https://github.com/castillobg) and [@jessecogollo](https://github.com/jessecogollo) for 2015's Node Knockout.
