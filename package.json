@@ -5,12 +5,16 @@
   "author": "halzate93, castillobg, jessecogollo",
   "main": "./app.js",
   "dependencies": {
-    "body-parser": "^1.14.1",
+    "body-parser": "1.14.1",
     "express": "4.13.3",
     "node-uuid": "1.4.3",
-    "socket.io": "1.3.7"
+    "socket.io": "1.3.7",
+    "soundcloud": "3.0.1"
   },
   "scripts": {
     "start": "node app.js"
+  },
+  "devDependencies": {
+    "tape": "4.2.2"
   }
 }
