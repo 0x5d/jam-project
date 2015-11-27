@@ -1,3 +1,3 @@
-(function () {
-  // var player = new $.Player()
-})()
+requirejs(['libs.js'], function (libs) {
+  
+})

@@ -64,7 +64,7 @@ function gotStream (stream) {
   analyserNode.fftSize = 2048
   inputPoint.connect(analyserNode)
 
-  audioRecorder = new window.Recorder(inputPoint, {workerPath: '/js/app/session/recorder/recorder-worker.js'})
+  audioRecorder = new window.Recorder(inputPoint)
 }
 
 function toggleRecording (e) {
